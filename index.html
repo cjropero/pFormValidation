@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formulario validado en tiempo real</title>
+</head>
+<body>
+  <div class="container">
+    <form action="">
+      <h1>Formulario de Registro</h1>
+
+      <label for="usuario">
+        <span>Usuario</span>
+        <input type="text" id="usuario" minlength="4" required>
+        <ul>
+          <li>Debe contener como mínimo 4 caracteres</li>
+          <li>Sólo debe usar letras y números</li>
+        </ul>
+      </label>
+
+      <label for="contraseña">
+        <span>Contraseña</span>
+        <input type="password" id="contraseña" minlength="8" maxlength="90" required>
+        <ul>
+          <li> Al menos 8 caracteres de longitud (y menos de 100)</li>
+          <li> Debe contener al menos 1 número </li>
+          <li> Debe contener al menos 1 letra minúscula </li>
+          <li> Debe contener al menos 1 letra mayúscula </li>
+          <li> Debe contener un carácter especial (@,!,#,...) </li>
+        </ul>
+      </label>
+
+      <label for="repetir_contraseña">
+        <span>Repetir contraseña</span>
+        <input type="password" id="repetir_contraseña" minlength="8" maxlength="90" required>
+      </label>
+
+      <br>
+      <input type="submit">
+
+    </form>
+  </div>
+</body>
+</html>
